@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Localidade
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-list-header>
+      <ion-label>
+        Por favor, selecione seu estado e cidade
+      </ion-label>
+    </ion-list-header>
+  
+    <ion-item>
+      <ion-label>Estado</ion-label>
+      <ion-select placeholder="" okText="Confirmar" cancelText="Cancelar">
+        <ion-select-option value="f">Paraná</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Cidade</ion-label>
+      <ion-select placeholder="" okText="Confirmar" cancelText="Cancelar">
+        <ion-select-option value="brown">Curitiba</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+  </ion-list>
+  <div class="example-center">
+    <ion-button  ion-center shape="round">Pesquisar</ion-button>
+  </div>
+
+  <div class="ion-padding">
+    <ion-card>
+      <ion-card-header>
+        Casos de COVID-19 em:
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #doughnutCanvas></canvas>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        Progressão Mensal em: 
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #lineCanvas></canvas>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+</ion-content>
